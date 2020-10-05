@@ -37,15 +37,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		222FE3510EBB6D9900FD13FC /* Soundflowerbed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soundflowerbed.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		22952B1E104EC967003AF61F /* Soundflower.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Soundflower.xcconfig; path = ../Source/Soundflower.xcconfig; sourceTree = SOURCE_ROOT; };
+		222FE3510EBB6D9900FD13FC /* SoundflowerBed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundflowerBed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		229B366F0EDC1DB500623222 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		52AE8A881A45AEC60049800F /* Soundflower.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Soundflower.xcconfig; sourceTree = "<group>"; };
 		C9CCA5E606ED143E0076FAC2 /* sf16.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = sf16.tiff; sourceTree = "<group>"; };
 		C9CCA5E706ED143E0076FAC2 /* sf2.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = sf2.tiff; sourceTree = "<group>"; };
 		C9CCA5E806ED143E0076FAC2 /* menuIcon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = menuIcon.tiff; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				222FE3510EBB6D9900FD13FC /* Soundflowerbed.app */,
+				222FE3510EBB6D9900FD13FC /* SoundflowerBed.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,7 +138,7 @@
 		29B97314FDCFA39411CA2CEA /* AudioThru */ = {
 			isa = PBXGroup;
 			children = (
-				22952B1E104EC967003AF61F /* Soundflower.xcconfig */,
+				52AE8A881A45AEC60049800F /* Soundflower.xcconfig */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -201,9 +201,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		222FE3310EBB6D9900FD13FC /* Soundflowerbed */ = {
+		222FE3310EBB6D9900FD13FC /* SoundflowerBed */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 222FE34C0EBB6D9900FD13FC /* Build configuration list for PBXNativeTarget "Soundflowerbed" */;
+			buildConfigurationList = 222FE34C0EBB6D9900FD13FC /* Build configuration list for PBXNativeTarget "SoundflowerBed" */;
 			buildPhases = (
 				222FE3320EBB6D9900FD13FC /* Headers */,
 				222FE3390EBB6D9900FD13FC /* Resources */,
@@ -214,10 +214,10 @@
 			);
 			dependencies = (
 			);
-			name = Soundflowerbed;
+			name = SoundflowerBed;
 			productInstallPath = "$(HOME)/Applications";
 			productName = AudioThru;
-			productReference = 222FE3510EBB6D9900FD13FC /* Soundflowerbed.app */;
+			productReference = 222FE3510EBB6D9900FD13FC /* SoundflowerBed.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -228,18 +228,19 @@
 			attributes = {
 				LastUpgradeCheck = 0610;
 			};
-			buildConfigurationList = 222FE2FF0EBB5DD500FD13FC /* Build configuration list for PBXProject "Soundflowerbed" */;
+			buildConfigurationList = 222FE2FF0EBB5DD500FD13FC /* Build configuration list for PBXProject "SoundflowerBed" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* AudioThru */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				222FE3310EBB6D9900FD13FC /* Soundflowerbed */,
+				222FE3310EBB6D9900FD13FC /* SoundflowerBed */,
 			);
 		};
 /* End PBXProject section */
@@ -314,7 +315,6 @@
 		};
 		222FE34D0EBB6D9900FD13FC /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22952B1E104EC967003AF61F /* Soundflower.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
@@ -326,7 +326,8 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Applications/Soundflower;
-				PRODUCT_NAME = Soundflowerbed;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = SoundflowerBed;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -338,7 +339,6 @@
 		};
 		222FE34E0EBB6D9900FD13FC /* Deployment */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22952B1E104EC967003AF61F /* Soundflower.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
@@ -347,7 +347,8 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Applications/Soundflower;
-				PRODUCT_NAME = Soundflowerbed;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = SoundflowerBed;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -360,7 +361,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		222FE2FF0EBB5DD500FD13FC /* Build configuration list for PBXProject "Soundflowerbed" */ = {
+		222FE2FF0EBB5DD500FD13FC /* Build configuration list for PBXProject "SoundflowerBed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				222FE2F90EBB5DD500FD13FC /* Development */,
@@ -369,7 +370,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
-		222FE34C0EBB6D9900FD13FC /* Build configuration list for PBXNativeTarget "Soundflowerbed" */ = {
+		222FE34C0EBB6D9900FD13FC /* Build configuration list for PBXNativeTarget "SoundflowerBed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				222FE34D0EBB6D9900FD13FC /* Development */,

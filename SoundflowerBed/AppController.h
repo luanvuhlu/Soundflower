@@ -5,9 +5,7 @@
 #import "VolumeView.h"
 #import "VolumeViewController.h"
 #include "AudioDeviceList.h"
-#include "AudioThruEngine.h"
 
-#define NUM_DEVICES 2
 
 @interface AppController : NSObject
 {
@@ -27,7 +25,8 @@
 	NSMenuItem		*mCur2chBufferSize;
 	NSMenuItem		*mCur16chBufferSize;
 	
-    AudioThruEngine	*mThruEngine[NUM_DEVICES];
+	//NSMenuItem		*mSuspended2chDevice;
+	//NSMenuItem		*mSuspended16chDevice;
     
     AudioDeviceID   mSuspended2chDeviceID;
     AudioDeviceID   mSuspended16chDeviceID;

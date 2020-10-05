@@ -58,27 +58,6 @@ end
 #  puts "    BUILD FAILED"
 #end
 
-
-###################################################################
-
-puts "  Building the new Soundflowerbed.app with Xcode"
-
-Dir.chdir("#{@source_sfb}")
-Open3.popen3("xcodebuild -project SoundflowerBed.xcodeproj -target SoundflowerBed -configuration #{configuration} clean build") do |stdin, stdout, stderr|
-  out = stdout.read
-  err = stderr.read
-end
-
-
-if /BUILD SUCCEEDED/.match(out)
-  puts "    BUILD SUCCEEDED"
-else
-  puts "    BUILD FAILED"
-end
-
-
-###################################################################
-
 puts "  Done."
 puts ""
 exit 0
