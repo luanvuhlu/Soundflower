@@ -51,7 +51,7 @@ To build Soundflower, open a terminal window and cd to the Soundflower folder.  
 	cd Tools
 	
 2.	Build Soundflower:
-	./build_kext.rb
+	./build_kext.rb dep|dev|--
 
 	The build_kext.rb will provide info about its required arg, which you will need to supply 
 	(Development or Deployment -- or the shorthand for them: dev or dep).
@@ -94,4 +94,5 @@ LICENSE
 
 Soundflower is licensed under the terms of the MIT license.  
 For details please refer to the accompanying 'License.txt' file distributed with Soundflower.
+
 
